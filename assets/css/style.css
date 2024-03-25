@@ -1,0 +1,164 @@
+body {
+    background-color: #3f3d3d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #008000;
+    font-weight: 10px;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-item {
+    display: flex;
+    align-items: flex-start; /* Menempatkan elemen secara vertikal */
+    flex-direction: column; /* Mengatur tata letak menjadi vertikal */
+    background-color: #3CB371;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+}
+#tanggal-masehi, #tanggal-hijriah {
+    font-size: 25px;
+    color: yellow;
+    margin: 0 5px 0 5px;
+}
+.waktu {
+    font-size: 50px;
+    color: yellow;
+    margin: 0 5px 0 5px;
+}
+
+.nav-items {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+h7 {
+    color: white;
+    margin-top: -5px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Content */
+.content-atas {
+    background-color: #363636;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content-sholat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.sholat {
+    width: 20%;
+    height: 50px;
+    background-color: #FF7F50;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content-jadwal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.jadwal {
+    width: 20%;
+    height: 80px;
+    background-color: #00CED1;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.content-bawah {
+    /* background-color: #363636; */
+    background-image: url(../images/myBg3.jpg);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: yellow;
+    text-align: center;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@keyframes blink {
+    0% { color: yellow; }
+    50% { color: red; }
+    100% { color: yellow; }
+}
+
+.content-bawah-blink-text {
+    animation: blink 2s linear infinite;
+}
+
+.footer {
+    background-color: #008000;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
